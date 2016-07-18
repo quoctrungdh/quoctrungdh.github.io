@@ -1,0 +1,78 @@
+
+/* Big tablets to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+	.row {
+		padding: 0 2%;
+	}
+}
+
+/* Small tablets to big tablets: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+
+	body {
+		font-size: 18px;
+	}
+	section {
+		padding: 50px 0;
+	}
+	.long-copy {
+		line-height: 145%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.steps-box:first-child {
+	    margin-top: 0px;
+	    text-align: center;
+	    padding-right: 0;
+	}
+	.steps-box:last-child {
+	    margin-top: 15px;
+	    padding-left: 0;
+	}
+	.plan-price {
+		font-size: 250%;
+	}
+	.contact-form {
+		width: 80%;
+	}
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+	body { font-size: 16px; }
+	.main-nav { display: none; }
+	.col { 
+		width: 100%; 
+		margin: 0 0 4% 0;
+	}
+	.section-cities .col {
+		width: 48%;
+		margin: 0 1%;
+	}
+		.footer-nav,
+		.social-icons {
+		text-align: center;
+		float: none;
+	}
+	footer p {
+		margin-top: 10px;
+	}
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+	section {
+		padding: 25px 0;
+	}
+	.section-cities .col {
+		width: 100%;
+	}
+	.contact-form {
+		width: 100%;
+	}
+	.hero-text-box {
+		overflow-x: hidden;
+	}
+}
+

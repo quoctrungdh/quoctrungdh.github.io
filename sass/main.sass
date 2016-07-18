@@ -13,8 +13,10 @@ body
 	background:
 		color: $dark-grey
 		image: url('../images/tools.png')
+	font-family: 'Open Sans', sans-serif
 	font-size: $base-font-size
-	margin-top: 20px
+	word-spacing: 0.07em
+	line-height: 1.7em
 
 section
 	padding: 30px 30px 0 30px
@@ -22,10 +24,10 @@ section
 
 h1
 	margin: 0
-	text-transform: uppercase
 
 /*--- RE-USABLE ELEMENTS ---*/
-.btn 
+.btn,
+.section-work .btn
 	background-color: $light-blue
 	border-radius: 3px
 	border: 1px solid $light-blue
@@ -34,6 +36,7 @@ h1
 	margin-bottom: 20px
 	padding: 5px 10px
 	font-size: 110%
+
 
 .uppercase
 	text-transform: uppercase
@@ -49,16 +52,34 @@ h1
 
 .section-intro
 	background-color: $light-grey
+	margin-top: 30px
 
 .personal-info 
 	margin-top: 20px
 	overflow: auto
 	font-size: 80%
+	span
+		display: block
+		line-height: 1.7em
+	.short-desc
+		margin-top: 7px
+
+.short-intro
+	span
+		display: block
+		padding-left: 10px
+
+.section-work
+	span
+		display: block
+.worktime
+	padding-left: 10px
+.work-desc
+	padding-left: 30px
 
 .education,
 .experience
-	padding: 0
-	padding-right: 20px
+	padding: 0	
 
 .section-skills,
 .section-contact
@@ -70,3 +91,4 @@ h1
 		text-align: center
 
 
+/* http://jsfiddle.net/VuTYx/2/ */
