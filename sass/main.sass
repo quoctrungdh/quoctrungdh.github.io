@@ -4,6 +4,8 @@ $light-grey: #F3F3F3
 $dark-grey: #CFCFCF
 $light-blue: #5A95D7
 $dark-blue: #384454
+$light-green: #5BC537
+$red-gmail: #DC483C
 	
 /* font */
 $base-font-size: 16px
@@ -68,10 +70,18 @@ h1
 	span
 		display: block
 		padding-left: 10px
+	i
+		padding-right: 10px
+		font-size: 120%;
+		color: $light-blue
 
 .section-work
 	span
 		display: block
+	i
+		padding-right: 10px
+		font-size: 120%	
+		color: $light-blue
 .worktime
 	padding-left: 10px
 .work-desc
@@ -81,10 +91,53 @@ h1
 .experience
 	padding: 0	
 
+.skill
+	text-align: center
+	margin-bottom: 15px
+	.c100
+		margin-bottom: 3px
+
+.hands-on-exp-title
+	margin: 0 0 10px 10px
+	i
+		padding-right: 10px
+		font-size: 150%
+		color: $light-blue
+.hands-on-exp li
+		margin-left: 20px
+
+.section-skills 
+	img
+		margin: auto auto
+
 .section-skills,
 .section-contact
 	padding-bottom: 30px
 
+.proj-thumb
+	height: 120px
+	overflow: hidden
+	img
+		margin: auto auto
+		
+.section-contact
+	a
+		color: #fff
+		&:hover
+			color: $red-gmail
+			text-decoration: none
+	i
+		font-size: 150%
+		padding-right: 10px
+
+.phone:hover
+	color: $light-green
+
+.email:hover
+	color: $red-gmail
+
+.skype:hover
+	color: $light-blue
 .copyright
 	padding-bottom: 25px
 	p

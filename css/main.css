@@ -58,8 +58,18 @@ h1 {
   display: block;
   padding-left: 10px; }
 
+.short-intro i {
+  padding-right: 10px;
+  font-size: 120%;
+  color: #5A95D7; }
+
 .section-work span {
   display: block; }
+
+.section-work i {
+  padding-right: 10px;
+  font-size: 120%;
+  color: #5A95D7; }
 
 .worktime {
   padding-left: 10px; }
@@ -71,9 +81,53 @@ h1 {
 .experience {
   padding: 0; }
 
+.skill {
+  text-align: center;
+  margin-bottom: 15px; }
+  .skill .c100 {
+    margin-bottom: 3px; }
+
+.hands-on-exp-title {
+  margin: 0 0 10px 10px; }
+  .hands-on-exp-title i {
+    padding-right: 10px;
+    font-size: 150%;
+    color: #5A95D7; }
+
+.hands-on-exp li {
+  margin-left: 20px; }
+
+.section-skills img {
+  margin: auto auto; }
+
 .section-skills,
 .section-contact {
   padding-bottom: 30px; }
+
+.proj-thumb {
+  height: 120px;
+  overflow: hidden; }
+  .proj-thumb img {
+    margin: auto auto; }
+
+.section-contact a {
+  color: #fff; }
+  .section-contact a:hover {
+    color: #DC483C;
+    text-decoration: none; }
+
+.section-contact i {
+  font-size: 150%;
+  padding-right: 10px; }
+
+.phone:hover {
+  color: #5BC537; }
+
+.email:hover {
+  color: #DC483C; }
+
+.skype:hover {
+  color: #5A95D7; }
 
 .copyright {
   padding-bottom: 25px; }
