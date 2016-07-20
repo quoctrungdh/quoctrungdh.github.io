@@ -47,6 +47,9 @@ h1
 /*--- SECTIONS ---*/
 .white-section 
 	background-color: #fff
+	.btn
+		background-color: #fff
+		color: $light-blue
 
 .darkblue-section 
 	background-color: $dark-blue
@@ -56,10 +59,11 @@ h1
 	background-color: $light-grey
 	margin-top: 30px
 	padding-top: 0px
-	img
-		width: 70%
 	h1
 		margin-top: 30px
+		margin-bottom: 10px
+	img
+		height: 120px
 
 .personal-info 
 	margin-top: 20px
@@ -148,5 +152,44 @@ h1
 	p
 		text-align: center
 
+@media only screen and (max-width: 1400px)
+		.section-intro
+			img
+				height: 120px
 
+@media only screen and (max-width: 992px)
+	.section-intro
+		img
+			height: 100px
+		font-size: 70%
+		h1
+			margin-top: 15px
+			margin-bottom: 5px
+		h2
+			font-size: 140%
+	.section-work
+		.education
+			padding-top: 20px
+
+@media only screen and (max-width: 768px)
+	.section-intro
+		img
+			height: 80px
+		font-size: 60%
+		h1
+			margin-top: 15px
+			margin-bottom: 5px
+		h2
+			font-size: 130%
+
+@media only screen and (max-width: 480px)
+	.section-intro
+		img
+			height: 70px
+		font-size: 50%
+		h1
+			margin-top: 15px
+			margin-bottom: 0px
+		h2
+			font-size: 130%
 /* http://jsfiddle.net/VuTYx/2/ */

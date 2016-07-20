@@ -35,6 +35,9 @@ h1 {
 /*--- SECTIONS ---*/
 .white-section {
   background-color: #fff; }
+  .white-section .btn {
+    background-color: #fff;
+    color: #5A95D7; }
 
 .darkblue-section {
   background-color: #384454;
@@ -44,10 +47,11 @@ h1 {
   background-color: #F3F3F3;
   margin-top: 30px;
   padding-top: 0px; }
-  .section-intro img {
-    width: 70%; }
   .section-intro h1 {
-    margin-top: 30px; }
+    margin-top: 30px;
+    margin-bottom: 10px; }
+  .section-intro img {
+    height: 120px; }
 
 .personal-info {
   margin-top: 20px;
@@ -138,5 +142,44 @@ h1 {
   padding-bottom: 25px; }
   .copyright p {
     text-align: center; }
+
+@media only screen and (max-width: 1400px) {
+  .section-intro img {
+    height: 120px; } }
+
+@media only screen and (max-width: 992px) {
+  .section-intro {
+    font-size: 70%; }
+    .section-intro img {
+      height: 100px; }
+    .section-intro h1 {
+      margin-top: 15px;
+      margin-bottom: 5px; }
+    .section-intro h2 {
+      font-size: 140%; }
+  .section-work .education {
+    padding-top: 20px; } }
+
+@media only screen and (max-width: 768px) {
+  .section-intro {
+    font-size: 60%; }
+    .section-intro img {
+      height: 80px; }
+    .section-intro h1 {
+      margin-top: 15px;
+      margin-bottom: 5px; }
+    .section-intro h2 {
+      font-size: 130%; } }
+
+@media only screen and (max-width: 480px) {
+  .section-intro {
+    font-size: 50%; }
+    .section-intro img {
+      height: 70px; }
+    .section-intro h1 {
+      margin-top: 15px;
+      margin-bottom: 0px; }
+    .section-intro h2 {
+      font-size: 130%; } }
 
 /* http://jsfiddle.net/VuTYx/2/ */
