@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=vietnamese);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 10px 0px;
+}
+
+.container-fluid  {
+	padding: 0px;
+}
+
+.intro {
+	margin: 10px;
+}
+
+.intro h1 {
+	font-size: 24px;
+	color: #337ab7;
+	padding-top: 18px;
+}
+
+
+h3 {
+	color: #d9534f;
+}
+
+.intro img {
+	width: 100%;
+	height: auto;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+section.body article {
+	margin: 10px 0px;
+	padding: 10px;
+	border-radius: 2px;
+	-webkit-box-shadow: 2px 2px 7px 1px #9d9d9d;
+	box-shadow: 2px 2px 7px 1px #9d9d9d;
+}
+
+.skills div.c100 {
+	float: none;
+	margin: 20px auto;
+}
+
+.skills p {
+	text-align: center;
+}
+
+.contact .fa-stack-2x {
+	color: #428bca;
+}
+
+footer {
+	text-align: center;
+	color: #808080;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+@media (min-width: @400px) {
+	.intro img {
+		display: none;
+	};
+}
