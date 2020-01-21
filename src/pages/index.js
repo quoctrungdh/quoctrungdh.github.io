@@ -3,21 +3,24 @@ import React from "react"
 export default ({ data }) => {
     const { allMarkdownRemark } = data;
     return (
-        <div>
-            <h1>Trung Do Blog</h1>
-            <h4>{allMarkdownRemark.totalCount} posts</h4>
-            {allMarkdownRemark.edges.map(({ node }) => <article>
-                <h2>{node.frontmatter.title} - <span>{node.frontmatter.date}</span></h2>
+        <div className="container">
+            <h1 className="the-big-title">Trung Do's Blog</h1>
+            <p>I'm a curious person who loves [web] engineering and building cool stuffs.
+                <br /> A bit more details about myself</p>
+            {allMarkdownRemark.edges.map(({ node }) => <article key={node.id}>
+                <h2>{node.frontmatter.title}</h2>
+                <i>{node.frontmatter.date}</i>
                 <p>{node.excerpt}</p>
             </article>)}
+
+            <footer>Crafted with &hearts; and powered Gatsby &copy; {new Date().getFullYear()}</footer>
         </div>
     )
 }
 
 export const query = graphql`
     query {
-        allMarkdownRemark {
-            totalCount
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
             edges {
                 node {
                     id
