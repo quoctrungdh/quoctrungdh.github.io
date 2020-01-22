@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import { graphql, Link } from "gatsby";
 
 export default ({ data }) => {
     const { allMarkdownRemark } = data;
@@ -8,7 +9,7 @@ export default ({ data }) => {
             <p>I'm a curious person who loves [web] engineering and building cool stuffs.
                 <br /> A bit more details about myself</p>
             {allMarkdownRemark.edges.map(({ node }) => <article key={node.id}>
-                <h2>{node.frontmatter.title}</h2>
+                <Link to={node.fields.slug} ><h2>{node.frontmatter.title}</h2></Link>
                 <i>{node.frontmatter.date}</i>
                 <p>{node.excerpt}</p>
             </article>)}
@@ -27,6 +28,9 @@ export const query = graphql`
                     frontmatter {
                         title
                         date(formatString: "DD MMMM, YYYY")
+                    }
+                    fields {
+                        slug
                     }
                     excerpt
                 }

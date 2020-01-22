@@ -26,7 +26,7 @@ Hi all, bắt đầu 2020 với cảm giác 2019 mình chưa cố hết sức m�
  ## How?
  Vắt óc set requirements rồi thì bây giờ ngẫm tiếp tech stack để giải quyết:
 
- - Mình thích đơn giản (và lười) nên ban đầu định tiếp cận với static site thôi, dễ dev, bỏ lên github pages chạy bao nhanh (mình làm React nhưng thấy overkill, server render thì phải tốn tiền nuôi server nữa). Nhưng vấn đề gặp phải là ko làm đc tag. Ngó 1 hồi thì thấy có Gastby, static site generator, có GraphQL nữa, thôi ráng làm vậy. (hugo, jerkyll phải làm 1 ngôn ngữ khác, debug chết bỏ nên thôi).
+ - Mình thích đơn giản (và lười) nên ban đầu định tiếp cận với static site thôi, dễ dev, bỏ lên github pages chạy bao nhanh (mình làm React nhưng thấy overkill, server render thì phải tốn tiền nuôi server nữa). Nhưng vấn đề gặp phải là ko làm đc tag. Ngó 1 hồi thì thấy có Gatsby, static site generator, có GraphQL nữa, thôi ráng làm vậy. (hugo, jerkyll phải làm 1 ngôn ngữ khác, debug chết bỏ nên thôi).
 
  - Update content nhanh gọn chắc chỉ có Markdown
 
