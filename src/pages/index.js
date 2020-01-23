@@ -6,9 +6,9 @@ import MainLayout from "../layouts/main";
 import Intro from "../templates/intro";
 
 export default ({ data }) => {
-    const { allMarkdownRemark } = data;
+    const { allMarkdownRemark, site } = data;
     return (
-        <MainLayout>
+        <MainLayout siteMetadata={site.siteMetadata}>
             <Intro />
             {allMarkdownRemark.edges.map(({ node }) => <article key={node.id}>
                 <Link to={node.fields.slug} ><h2>{node.frontmatter.title}</h2></Link>
@@ -34,6 +34,11 @@ export const query = graphql`
                     }
                     excerpt
                 }
+            }
+        }
+        site {
+            siteMetadata {
+                title
             }
         }
     }

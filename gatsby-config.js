@@ -21,5 +21,9 @@ module.exports = {
 				pathToConfigModule: `src/utils/typography`,
 			},
 		},
-	]
+		`gatsby-plugin-react-helmet`
+	],
+	siteMetadata: {
+		title: "Trung Do's Blog"
+	}
 }
