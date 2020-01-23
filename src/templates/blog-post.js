@@ -1,14 +1,21 @@
 import React from "react";
 import { graphql } from "gatsby";
 
+import MainLayout from "../layouts/main";
+
+import Intro from "../templates/intro";
+
 export default function BlogPost({ data }) {
     const post = data.markdownRemark;
 
     return (
-        <div>
-            <h1>{post.title}</h1>
+        <MainLayout>
+            <h2>{post.title}</h2>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        </div>
+            <div style={{ marginBottom: "0.5rem" }}>
+                <Intro />
+            </div>
+        </MainLayout>
     )
 }
 
