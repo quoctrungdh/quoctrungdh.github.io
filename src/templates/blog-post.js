@@ -11,7 +11,7 @@ export default function BlogPost({ data }) {
     return (
         <MainLayout siteMetadata={{ title: post.frontmatter.title }}>
             <h2>{post.frontmatter.title}</h2>
-            <i>Published on: {post.frontmatter.date}</i>
+            <i>Posted {post.frontmatter.date}</i>
             <div style={{ marginTop: "1rem" }} dangerouslySetInnerHTML={{ __html: post.html }} />
             <div style={{ marginBottom: "0.5rem" }}>
                 <Intro />
@@ -26,7 +26,7 @@ export const query = graphql`
             html
             frontmatter {
                 title
-                date(formatString: "DD MMMM, YYYY")
+                date(formatString: "MMMM DD, YYYY")
             }
         }
     }

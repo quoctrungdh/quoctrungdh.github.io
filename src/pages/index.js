@@ -12,7 +12,7 @@ export default ({ data }) => {
             <Intro />
             {allMarkdownRemark.edges.map(({ node }) => <article key={node.id}>
                 <Link to={node.fields.slug} ><h2>{node.frontmatter.title}</h2></Link>
-                <i>{node.frontmatter.date}</i>
+                <i>Posted {node.frontmatter.date}</i>
                 <p>{node.excerpt}</p>
             </article>)}
         </MainLayout>
@@ -27,7 +27,7 @@ export const query = graphql`
                     id
                     frontmatter {
                         title
-                        date(formatString: "DD MMMM, YYYY")
+                        date(formatString: "MMMM DD, YYYY")
                     }
                     fields {
                         slug
