@@ -15,6 +15,7 @@
     "deploy": "npx gh-pages -d public -b master"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.1",
     "autoprefixer": "^10.2.5",
     "gatsby": "^2.18.12",
     "gatsby-plugin-postcss": "^4.3.0",

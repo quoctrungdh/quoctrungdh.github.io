@@ -10,12 +10,9 @@ export default function BlogPost({ data }) {
 
     return (
         <MainLayout siteMetadata={{ title: post.frontmatter.title }}>
-            <h2>{post.frontmatter.title}</h2>
-            <i>Posted {post.frontmatter.date}</i>
-            <div style={{ marginTop: "1rem" }} dangerouslySetInnerHTML={{ __html: post.html }} />
-            <div style={{ marginBottom: "0.5rem" }}>
-                <Intro />
-            </div>
+            <h2 className="">{post.frontmatter.title}</h2>
+            <i className="text-sm text-gray-500">Posted {post.frontmatter.date}</i>
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </MainLayout>
     )
 }

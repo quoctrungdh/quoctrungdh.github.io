@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+h2 {
+    @apply text-2xl mt-4;
+}
+
+h3 {
+    @apply text-xl mt-2;
+}
+
 pre {
-    background-color: rgba(0, 0, 0, 0.05);
-    padding: 1rem;
-    overflow: auto;
+    @apply bg-gray-100 my-4 p-4 overflow-auto text-xs;
 }
