@@ -1,8 +1,8 @@
 import React from "react";
 
-import SEO from "../templates/seo";
-import Title from "../templates/title";
-import Footer from "../templates/footer";
+import SEO from "../components/seo";
+import Title from "../components/title";
+import Footer from "../components/footer";
 
 export default function MainLayout(props) {
     return (

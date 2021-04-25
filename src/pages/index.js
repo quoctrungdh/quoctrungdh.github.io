@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby";
 
 import MainLayout from "../layouts/main";
 
-import Intro from "../templates/intro";
+import Intro from "../components/intro";
 
 export default ({ data }) => {
     const { allMarkdownRemark, site } = data;
